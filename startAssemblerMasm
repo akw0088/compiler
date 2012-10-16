@@ -1,0 +1,8 @@
+.686
+.model flat, stdcall
+PUBLIC       main
+.data
+printI PROTO C arg1:DWORD
+printLine PROTO C
+data_segment DWORD 2048 DUP ?
+.code
