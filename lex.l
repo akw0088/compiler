@@ -20,8 +20,8 @@ int					{ STATEMENT; return INT;		}
 char					{ STATEMENT; return CHAR;		}
 boolean					{ STATEMENT; return BOOLEAN;		}
 if					{ STATEMENT; return IF;			}
-begin					{ STATEMENT; return T_BEGIN;		}
-end					{ STATEMENT; return T_END;		}
+"{"					{ STATEMENT; return T_BEGIN;		}
+"}"					{ STATEMENT; return T_END;		}
 returns					{ STATEMENT; return RETURNS;		}
 return					{ STATEMENT; return RETURN;		}
 else					{ STATEMENT; return ELSE;		}
