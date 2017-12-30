@@ -1,7 +1,7 @@
 int X[1000]
 
 main() returns void
-begin
+{
     int i
 
     do 10 i = 0, 999
@@ -41,23 +41,23 @@ begin
 	prints(" ")
         printi(X[999])
         printLine()
-end
+}
 
 
 sort(n) returns void
     int n
-begin
+{
     int i;
     int j
     do 200 i = 0, n-1, 1
         do 100 j = 0, n-i-1, 1
 	    if( X[j] > X[j+1] )
-            begin
+            {
 		int temp
 		temp   = X[j]
 		X[j]   = X[j+1]
 		X[j+1] = temp
-	    end
+	    }
 	100 continue
     200 continue
-end
+}

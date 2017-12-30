@@ -2,7 +2,7 @@ int A[10][20][30]
 
 
 main() returns void
-begin
+{
     int i;
     int j;
     int k
@@ -17,4 +17,4 @@ begin
     printi(A[3][2][4])
     printLine() 
 
-end
+}

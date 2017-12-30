@@ -1,5 +1,5 @@
 main() returns void
-begin
+{
     int x;
     int B;
     int i
@@ -19,4 +19,4 @@ begin
 200 continue    
     printi(x)
     printLine()
-end
+}

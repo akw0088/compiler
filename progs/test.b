@@ -1,5 +1,5 @@
 main() returns void
-begin
+{
     int n;
     int i;
     int j;
@@ -15,4 +15,4 @@ begin
 
 	100 continue
     200 continue
-end
+}

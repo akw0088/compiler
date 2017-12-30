@@ -1,5 +1,5 @@
 main() returns void
-begin
+{
     int i;
     int sum;
     int j
@@ -12,4 +12,4 @@ begin
 200 continue
     printi(sum)
     printLine()
-end
+}

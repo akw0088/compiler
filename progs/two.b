@@ -1,5 +1,5 @@
 main() returns void
-begin
+{
     int A[10][20][30];
     int i;
     int j;
@@ -15,4 +15,4 @@ begin
     printi(A[3][2][4])
     printLine() 
 
-end
+}

@@ -5,7 +5,7 @@ int x[8]
 
 queens(c) returns void
 	int c
-begin
+{
 	int r
 
         do 100 r = 0, 7, 1
@@ -16,38 +16,38 @@ begin
 		   down[r+c] != 0
 	       )
  
-		begin
+		{
 		    rows[r] = 0
 		    up[r-c+7] = 0
 		    down[r+c] = 0
 		    x[c] = r
 		    if (c == 7)
-		    begin
+		    {
 		    	print()
-                    end
+                    }
 		    else
-		    begin
+		    {
 		    	queens(c + 1)
-                    end
+                    }
 		    rows[r] = 1
 		    up[r-c+7] = 1
 		    down[r+c] = 1
-		end
+		}
 100	continue
-end
+}
 
 print() returns void
-begin
+{
 	int k
 
 	do 200 k = 0, 7
 		printc(x[k] + 49)
 200     continue
 	printLine()
-end
+}
 
 main() returns void
-begin
+{
 	int i
 	do 300 i = 0, 14
 		up[i] = 1
@@ -57,4 +57,4 @@ begin
 		rows[i] = 1
 400	continue
 	queens(0)
-end
+}

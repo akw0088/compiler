@@ -1,5 +1,5 @@
 main() returns void
-begin
+{
     int i;
     int j
     i = 177
@@ -7,5 +7,5 @@ begin
     i = i %  j
     printi(i)
     printLine()
-end
+}
 

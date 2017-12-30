@@ -1,6 +1,6 @@
 
 main() returns void
-begin
+{
     int x;
     int B;
     int i
@@ -24,16 +24,16 @@ begin
 200 continue
 
     if( B < x  && B != 0)
-    begin
+    {
 	if( x == 0 )
-	begin
+	{
             printLine()
 	    printi(x)
-	end
+	}
 	else
-	begin
+	{
 	    printi(x)
-	end
-    end
+	}
+    }
     printLine()     
-end
+}
