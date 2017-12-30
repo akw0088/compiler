@@ -1,96 +1,96 @@
 make
 echo "Compiling one.b"
-./compiler < Pgm4Programs/one.b > Pgm4Programs/one.asm
-cat startAssembler Pgm4Programs/one.asm > Pgm4Programs/one.s
-gcc Pgm4Programs/one.s Pgm4Programs/accessories.o -g -o Pgm4Programs/one
+./compiler < progs/one.b > progs/one.asm
+cat startAssembler progs/one.asm > progs/one.s
+gcc -m32 progs/one.s progs/accessories.o -g -o progs/one
 
 echo "Compiling two.b"
-./compiler < Pgm4Programs/two.b > Pgm4Programs/two.asm
-cat startAssembler Pgm4Programs/two.asm > Pgm4Programs/two.s
-gcc Pgm4Programs/two.s Pgm4Programs/accessories.o -g -o Pgm4Programs/two
+./compiler < progs/two.b > progs/two.asm
+cat startAssembler progs/two.asm > progs/two.s
+gcc -m32 progs/two.s progs/accessories.o -g -o progs/two
 
 echo "Compiling three.b"
-./compiler < Pgm4Programs/three.b > Pgm4Programs/three.asm
-cat startAssembler Pgm4Programs/three.asm > Pgm4Programs/three.s
-gcc Pgm4Programs/three.s Pgm4Programs/accessories.o -g -o Pgm4Programs/three
+./compiler < progs/three.b > progs/three.asm
+cat startAssembler progs/three.asm > progs/three.s
+gcc -m32 progs/three.s progs/accessories.o -g -o progs/three
 
 echo "Compiling four.b"
-./compiler < Pgm4Programs/four.b > Pgm4Programs/four.asm
-cat startAssembler Pgm4Programs/four.asm > Pgm4Programs/four.s
-gcc Pgm4Programs/four.s Pgm4Programs/accessories.o -g -o Pgm4Programs/four
+./compiler < progs/four.b > progs/four.asm
+cat startAssembler progs/four.asm > progs/four.s
+gcc -m32 progs/four.s progs/accessories.o -g -o progs/four
 
 echo "Compiling five.b"
-./compiler < Pgm4Programs/five.b > Pgm4Programs/five.asm
-cat startAssembler Pgm4Programs/five.asm > Pgm4Programs/five.s
-gcc Pgm4Programs/five.s Pgm4Programs/accessories.o -g -o Pgm4Programs/five
+./compiler < progs/five.b > progs/five.asm
+cat startAssembler progs/five.asm > progs/five.s
+gcc -m32 progs/five.s progs/accessories.o -g -o progs/five
 
 echo "Compiling six.b"
-./compiler < Pgm4Programs/six.b > Pgm4Programs/six.asm
-cat startAssembler Pgm4Programs/six.asm > Pgm4Programs/six.s
-gcc Pgm4Programs/six.s Pgm4Programs/accessories.o -g -o Pgm4Programs/six
+./compiler < progs/six.b > progs/six.asm
+cat startAssembler progs/six.asm > progs/six.s
+gcc -m32 progs/six.s progs/accessories.o -g -o progs/six
 
 echo "Compiling seven.b"
-./compiler < Pgm4Programs/seven.b > Pgm4Programs/seven.asm
-cat startAssembler Pgm4Programs/seven.asm > Pgm4Programs/seven.s
-gcc Pgm4Programs/seven.s Pgm4Programs/accessories.o -g -o Pgm4Programs/seven
+./compiler < progs/seven.b > progs/seven.asm
+cat startAssembler progs/seven.asm > progs/seven.s
+gcc -m32 progs/seven.s progs/accessories.o -g -o progs/seven
 
 echo "Compiling eight.b"
-./compiler < Pgm4Programs/eight.b > Pgm4Programs/eight.asm
-cat startAssembler Pgm4Programs/eight.asm > Pgm4Programs/eight.s
-gcc Pgm4Programs/eight.s Pgm4Programs/accessories.o -g -o Pgm4Programs/eight
+./compiler < progs/eight.b > progs/eight.asm
+cat startAssembler progs/eight.asm > progs/eight.s
+gcc -m32 progs/eight.s progs/accessories.o -g -o progs/eight
 
 echo "Compiling nine.b"
-./compiler < Pgm4Programs/nine.b > Pgm4Programs/nine.asm
-cat startAssembler Pgm4Programs/nine.asm > Pgm4Programs/nine.s
-gcc Pgm4Programs/nine.s Pgm4Programs/accessories.o -g -o Pgm4Programs/nine
+./compiler < progs/nine.b > progs/nine.asm
+cat startAssembler progs/nine.asm > progs/nine.s
+gcc -m32 progs/nine.s progs/accessories.o -g -o progs/nine
 
 echo "Compiling ten.b"
-./compiler < Pgm4Programs/ten.b > Pgm4Programs/ten.asm
-cat startAssembler Pgm4Programs/ten.asm > Pgm4Programs/ten.s
-gcc Pgm4Programs/ten.s Pgm4Programs/accessories.o -g -o Pgm4Programs/ten
+./compiler < progs/ten.b > progs/ten.asm
+cat startAssembler progs/ten.asm > progs/ten.s
+gcc -m32 progs/ten.s progs/accessories.o -g -o progs/ten
 
 echo "Compiling 8q.b"
-./compiler < Pgm4Programs/8q.b > Pgm4Programs/8q.asm
-cat startAssembler Pgm4Programs/8q.asm > Pgm4Programs/8q.s
-gcc Pgm4Programs/8q.s Pgm4Programs/accessories.o -g -o Pgm4Programs/8q
+./compiler < progs/8q.b > progs/8q.asm
+cat startAssembler progs/8q.asm > progs/8q.s
+gcc -m32 progs/8q.s progs/accessories.o -g -o progs/8q
 
 echo "Compiling bubble.b"
-./compiler < Pgm4Programs/bubble.b > Pgm4Programs/bubble.asm
-cat startAssembler Pgm4Programs/bubble.asm > Pgm4Programs/bubble.s
-gcc Pgm4Programs/bubble.s Pgm4Programs/accessories.o -g -o Pgm4Programs/bubble
+./compiler < progs/bubble.b > progs/bubble.asm
+cat startAssembler progs/bubble.asm > progs/bubble.s
+gcc -m32 progs/bubble.s progs/accessories.o -g -o progs/bubble
 
 echo "Compiling hanoi.b"
-./compiler < Pgm4Programs/hanoi.b > Pgm4Programs/hanoi.asm
-cat startAssembler Pgm4Programs/hanoi.asm > Pgm4Programs/hanoi.s
-gcc Pgm4Programs/hanoi.s Pgm4Programs/accessories.o -g -o Pgm4Programs/hanoi
+./compiler < progs/hanoi.b > progs/hanoi.asm
+cat startAssembler progs/hanoi.asm > progs/hanoi.s
+gcc -m32 progs/hanoi.s progs/accessories.o -g -o progs/hanoi
 
 echo "Compiling queens.b"
-./compiler < Pgm4Programs/queens.b > Pgm4Programs/queens.asm
-cat startAssembler Pgm4Programs/queens.asm > Pgm4Programs/queens.s
-gcc Pgm4Programs/queens.s Pgm4Programs/accessories.o -g -o Pgm4Programs/queens
+./compiler < progs/queens.b > progs/queens.asm
+cat startAssembler progs/queens.asm > progs/queens.s
+gcc -m32 progs/queens.s progs/accessories.o -g -o progs/queens
 
 echo "Compiling mod.b"
-./compiler < Pgm4Programs/mod.b > Pgm4Programs/mod.asm
-cat startAssembler Pgm4Programs/mod.asm > Pgm4Programs/mod.s
-gcc Pgm4Programs/mod.s Pgm4Programs/accessories.o -g -o Pgm4Programs/mod
+./compiler < progs/mod.b > progs/mod.asm
+cat startAssembler progs/mod.asm > progs/mod.s
+gcc -m32 progs/mod.s progs/accessories.o -g -o progs/mod
 
 
 echo "Compiling multiDimension.b"
-./compiler < Pgm4Programs/multiDimension.b > Pgm4Programs/multiDimension.asm
-cat startAssembler Pgm4Programs/multiDimension.asm > Pgm4Programs/multiDimension.s
-gcc Pgm4Programs/multiDimension.s Pgm4Programs/accessories.o -g -o Pgm4Programs/multiDimension
+./compiler < progs/multiDimension.b > progs/multiDimension.asm
+cat startAssembler progs/multiDimension.asm > progs/multiDimension.s
+gcc -m32 progs/multiDimension.s progs/accessories.o -g -o progs/multiDimension
 
 echo "Compiling factorial.b"
-./compiler < Pgm4Programs/factorial.b > Pgm4Programs/factorial.asm
-cat startAssembler Pgm4Programs/factorial.asm > Pgm4Programs/factorial.s
-gcc Pgm4Programs/factorial.s Pgm4Programs/accessories.o -g -o Pgm4Programs/factorial
+./compiler < progs/factorial.b > progs/factorial.asm
+cat startAssembler progs/factorial.asm > progs/factorial.s
+gcc -m32 progs/factorial.s progs/accessories.o -g -o progs/factorial
 
 echo "Compiling sum.b"
-./compiler < Pgm4Programs/sum.b > Pgm4Programs/sum.asm
-cat startAssembler Pgm4Programs/sum.asm > Pgm4Programs/sum.s
-gcc Pgm4Programs/sum.s Pgm4Programs/accessories.o -g -o Pgm4Programs/sum
+./compiler < progs/sum.b > progs/sum.asm
+cat startAssembler progs/sum.asm > progs/sum.s
+gcc -m32 progs/sum.s progs/accessories.o -g -o progs/sum
 
 echo "Compiling scope.b"
-./compiler < Pgm4Programs/scope.b > Pgm4Programs/scope.asm
-cat startAssembler Pgm4Programs/scope.asm > Pgm4Programs/scope.s
-gcc Pgm4Programs/scope.s Pgm4Programs/accessories.o -g -o Pgm4Programs/scope
+./compiler < progs/scope.b > progs/scope.asm
+cat startAssembler progs/scope.asm > progs/scope.s
+gcc -m32 progs/scope.s progs/accessories.o -g -o progs/scope
