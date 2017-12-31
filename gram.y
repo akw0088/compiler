@@ -38,7 +38,7 @@ func : RETURNS returntype ID { codegen.startfunc($3); } '(' paramlist ')' {symbo
 ;*/
 
 decllist : decl ';' decllist
-     | decl						{	codegen.endallocate();		}
+     | decl ';'						{	codegen.endallocate();		}
      | 
 ;
 

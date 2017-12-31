@@ -1,4 +1,4 @@
-int X[1000]
+int X[1000];
 
 function void main()
 {

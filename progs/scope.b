@@ -1,5 +1,5 @@
 int x;
-int A
+int A;
 
 function void main()
 {

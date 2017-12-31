@@ -25,7 +25,7 @@ function void print(int k)
 
 function void main()
 {
-	int i
+	int i;
 	for 300 (i = 0; 14)
 	{
 		up[i] = 1;

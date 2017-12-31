@@ -1,4 +1,4 @@
-int A[10][20][30]
+int A[10][20][30];
 
 
 function void main()

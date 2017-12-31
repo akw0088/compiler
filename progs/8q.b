@@ -1,7 +1,7 @@
 int up[15];
 int down[15];
 int rows[8];
-int x[8]
+int x[8];
 
 function void queens(int c)
 {
