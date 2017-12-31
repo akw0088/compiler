@@ -11,8 +11,7 @@ function void main()
     } 100 end
 }
 
-function int factorial(n)
-    int n 
+function int factorial(int n)
 {
     if( n == 1 )
     {

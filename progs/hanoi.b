@@ -6,11 +6,7 @@ function void main()
     hanoi(1,3,2,4);
 }
 
-function void hanoi(x,y,z,n)
-    int x;
-    int y;
-    int z;
-    int n;
+function void hanoi(int x, int y, int z, int n)
 {
     if( n == 1 )
     {

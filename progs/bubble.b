@@ -45,8 +45,7 @@ function void main()
 }
 
 
-function void sort(n)
-    int n
+function void sort(int n)
 {
     int i;
     int j;

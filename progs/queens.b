@@ -3,8 +3,7 @@ int down[15];
 int rows[8];
 int x[8];
 
-function void queens()
-	int i
+function void queens(int i)
 {
 	int r;
 	r = 0;
@@ -14,8 +13,7 @@ function void queens()
 	} 100	end
 }
 
-function void print()
-	int k
+function void print(int k)
 {
 
 	for 200 (k = 0; 7)

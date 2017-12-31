@@ -29,7 +29,7 @@ funclist : func funclist
      | func
 ;
 
-func : RETURNS returntype ID { codegen.startfunc($3); } '(' parmlist ')' {symbol_table.push();} paramlist sblock {symbol_table.pop(); codegen.endfunc();}
+func : RETURNS returntype ID { codegen.startfunc($3); } '(' paramlist ')' {symbol_table.push();} sblock {symbol_table.pop(); codegen.endfunc();}
 ;
 
 parmlist : ID ',' parmlist
@@ -46,7 +46,7 @@ decl : type ID sizelist					{	codegen.allocate($1, $2, $3);	}
      | type ID						{	codegen.allocate($1, $2, NULL);	}
 ;
 
-paramlist : param ';' paramlist
+paramlist : param ',' paramlist
      | param						{	codegen.endallocate_param();		}
      | 
 ;
