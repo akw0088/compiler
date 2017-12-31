@@ -22,7 +22,7 @@ boolean					{ STATEMENT; return BOOLEAN;		}
 if					{ STATEMENT; return IF;			}
 "{"					{ STATEMENT; return T_BEGIN;		}
 "}"					{ STATEMENT; return T_END;		}
-returns					{ STATEMENT; return RETURNS;		}
+function				{ STATEMENT; return RETURNS;		}
 return					{ STATEMENT; return RETURN;		}
 else					{ STATEMENT; return ELSE;		}
 continue				{ STATEMENT; return CONTINUE;		}
