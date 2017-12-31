@@ -1,17 +1,17 @@
 main() returns void
 {
     int B;
-    int i
+    int i;
 
-    B = 7
-    i = 3
+    B = 7;
+    i = 3;
     if( i ** 2 < B )
     {
-	printi(i ** 2)
+	printi(i ** 2);
     }
     else
     {
-	printi(B ** 3)
+	printi(B ** 3);
     }
-    printLine()
+    printLine();
 }

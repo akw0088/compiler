@@ -2,21 +2,21 @@ main() returns void
 {
     int x;
     int B;
-    int i
+    int i;
 
-    x = 1
-    B = 1
+    x = 1;
+    B = 1;
     do 100 i = 3, 7
-        printi(i)
-        B = B + 2 * i
+        printi(i);
+        B = B + 2 * i;
 100 continue    
-    printLine()
-    printi(B)
-    printLine()
+    printLine();
+    printi(B);
+    printLine();
 
     do 200 i = 3, 7, 2
-	x = x * i
+	x = x * i;
 200 continue    
-    printi(x)
-    printLine()
+    printi(x);
+    printLine();
 }

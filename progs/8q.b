@@ -6,7 +6,7 @@ int x[8]
 queens(c) returns void
 	int c
 {
-	int r
+	int r;
 
         do 100 r = 0, 7, 1
 	    if (   rows[r] != 0 
@@ -17,44 +17,44 @@ queens(c) returns void
 	       )
  
 		{
-		    rows[r] = 0
-		    up[r-c+7] = 0
-		    down[r+c] = 0
-		    x[c] = r
+		    rows[r] = 0;
+		    up[r-c+7] = 0;
+		    down[r+c] = 0;
+		    x[c] = r;
 		    if (c == 7)
 		    {
-		    	print()
+		    	print();
                     }
 		    else
 		    {
-		    	queens(c + 1)
+		    	queens(c + 1);
                     }
-		    rows[r] = 1
-		    up[r-c+7] = 1
-		    down[r+c] = 1
+		    rows[r] = 1;
+		    up[r-c+7] = 1;
+		    down[r+c] = 1;
 		}
 100	continue
 }
 
 print() returns void
 {
-	int k
+	int k;
 
 	do 200 k = 0, 7
-		printc(x[k] + 49)
+		printc(x[k] + 49);
 200     continue
-	printLine()
+	printLine();
 }
 
 main() returns void
 {
-	int i
+	int i;
 	do 300 i = 0, 14
-		up[i] = 1
-		down[i] = 1
+		up[i] = 1;
+		down[i] = 1;
 300	continue
 	do 400 i = 0, 7
-		rows[i] = 1
+		rows[i] = 1;
 400	continue
-	queens(0)
+	queens(0);
 }

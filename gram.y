@@ -81,10 +81,10 @@ stmts :	stmt stmts
 ;
 
 
-stmt : id '=' e							{ 	codegen.assignment($1, $3);	}
-     | ID '(' exprlist ')' 					{	codegen.funccall($1);	}
-     | id '=' conditionalexpr
-     | RETURN e							{	codegen.ret($2);	}
+stmt : id '=' e ';'							{ 	codegen.assignment($1, $3);	}
+     | ID '(' exprlist ')' ';' 					{	codegen.funccall($1);	}
+     | id '=' conditionalexpr ';'
+     | RETURN e ';'							{	codegen.ret($2);	}
      | IF '(' conditionalexpr ')' sblock
 {
 	codegen.ifblock((int)$3);
