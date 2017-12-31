@@ -28,7 +28,7 @@ else					{ STATEMENT; return ELSE;		}
 continue				{ STATEMENT; return CONTINUE;		}
 "&&"					{ STATEMENT; return AND;		}
 "||"					{ STATEMENT; return OR;			}
-do					{ STATEMENT; return DO;			}
+for					{ STATEMENT; return DO;			}
 not					{ STATEMENT; return NOT;		}
 "+"					{ STATEMENT; return '+';		}
 "-"					{ STATEMENT; return '-';		}

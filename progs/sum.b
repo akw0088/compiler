@@ -5,8 +5,8 @@ main() returns void
     int j;
 
     sum = 0;
-    do 200 i = 1, 100
-        do 100 j = 1, i, 1
+    for 200 i = 1, 100
+        for 100 j = 1, i, 1
             sum = sum + 1;
 100     continue
 200 continue
