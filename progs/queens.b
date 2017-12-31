@@ -3,7 +3,7 @@ int down[15];
 int rows[8];
 int x[8];
 
-queens() returns void
+function void queens()
 	int i
 {
 	int r;
@@ -14,7 +14,7 @@ queens() returns void
 	} 100	continue
 }
 
-print() returns void
+function void print()
 	int k
 {
 
@@ -25,7 +25,7 @@ print() returns void
 	printLine();
 }
 
-main() returns void
+function void main()
 {
 	int i
 	for 300 i = 0; 14

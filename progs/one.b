@@ -1,4 +1,4 @@
-main() returns void
+function void main()
 {
     int x
     x = 3;

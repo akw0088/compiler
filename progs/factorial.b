@@ -1,5 +1,5 @@
 
-main() returns void
+function void main()
 {
     int I;
     for 100 I = 1; 10
@@ -11,7 +11,7 @@ main() returns void
     } 100 continue
 }
 
-factorial(n) returns int
+function int factorial(n)
     int n 
 {
     if( n == 1 )

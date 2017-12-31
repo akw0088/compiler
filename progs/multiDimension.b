@@ -1,7 +1,7 @@
 int A[10][20][30]
 
 
-main() returns void
+function void main()
 {
     int i;
     int j;

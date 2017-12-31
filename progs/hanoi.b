@@ -1,12 +1,12 @@
 
-main() returns void
+function void main()
 {
     prints("The solution for 4 disks is:");
     printLine();
     hanoi(1,3,2,4);
 }
 
-hanoi(x,y,z,n) returns void
+function void hanoi(x,y,z,n)
     int x;
     int y;
     int z;

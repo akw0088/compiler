@@ -29,7 +29,7 @@ funclist : func funclist
      | func
 ;
 
-func : ID { codegen.startfunc($1); } '(' parmlist ')' RETURNS type {symbol_table.push();} paramlist sblock {symbol_table.pop(); codegen.endfunc();}
+func : RETURNS returntype ID { codegen.startfunc($3); } '(' parmlist ')' {symbol_table.push();} paramlist sblock {symbol_table.pop(); codegen.endfunc();}
 ;
 
 parmlist : ID ',' parmlist
@@ -68,6 +68,12 @@ size : '[' INT_LITERAL ']'					{ $$ = $2; }
 ;
 
 type : INT
+     | CHAR
+     | BOOLEAN
+     | VOID
+;
+
+returntype : INT
      | CHAR
      | BOOLEAN
      | VOID

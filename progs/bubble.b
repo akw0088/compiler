@@ -1,6 +1,6 @@
 int X[1000]
 
-main() returns void
+function void main()
 {
     int i;
 
@@ -46,7 +46,7 @@ main() returns void
 }
 
 
-sort(n) returns void
+function void sort(n)
     int n
 {
     int i;
