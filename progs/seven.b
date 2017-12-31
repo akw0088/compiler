@@ -16,14 +16,14 @@ function void main()
         printi(i);
         printLine();
         B = B + 2 * i;
-    } 100 continue    
+    } 100 end    
 
     printi(B);
     printLine();
     for 200 (i = 3; 7; 2)
     {
 	x = i * 3;
-    } 200 continue
+    } 200 end
 
     if( B < x  && B != 0)
     {

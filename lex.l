@@ -25,7 +25,7 @@ if					{ STATEMENT; return IF;			}
 function				{ STATEMENT; return RETURNS;		}
 return					{ STATEMENT; return RETURN;		}
 else					{ STATEMENT; return ELSE;		}
-continue				{ STATEMENT; return CONTINUE;		}
+end					{ STATEMENT; return CONTINUE;		}
 "&&"					{ STATEMENT; return AND;		}
 "||"					{ STATEMENT; return OR;			}
 for					{ STATEMENT; return DO;			}

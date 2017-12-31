@@ -10,8 +10,8 @@ function void main()
         for 100 (j = 1; i; 1)
 	{
             sum = sum + 1;
-	} 100     continue
-    } 200 continue
+	} 100     end
+    } 200 end
     printi(sum);
     printLine();
 }

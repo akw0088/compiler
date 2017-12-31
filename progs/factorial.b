@@ -8,7 +8,7 @@ function void main()
         prints(" Factorial = ");
     	printi(factorial(I));
         printLine();
-    } 100 continue
+    } 100 end
 }
 
 function int factorial(n)

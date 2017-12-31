@@ -6,6 +6,6 @@ function void main()
     {
         printi(i);
         prints(" ");
-    } 100 continue    
+    } 100 end    
     printLine();
 }

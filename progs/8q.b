@@ -34,7 +34,7 @@ function void queens(c)
 		    up[r-c+7] = 1;
 		    down[r+c] = 1;
 		}
-	} 100	continue
+	} 100	end
 }
 
 function void print()
@@ -44,7 +44,7 @@ function void print()
 	for 200 (k = 0; 7)
 	{
 		printc(x[k] + 49);
-	} 200     continue
+	} 200     end
 	printLine();
 }
 
@@ -55,10 +55,10 @@ function void main()
 	{
 		up[i] = 1;
 		down[i] = 1;
-	} 300	continue
+	} 300	end
 	for 400 (i = 0; 7)
 	{
 		rows[i] = 1;
-	} 400	continue
+	} 400	end
 	queens(0);
 }

@@ -13,9 +13,9 @@ function void main()
     	    for 100 (k = 0; 29)
 	    {
 		A[i][j][k] = i * j * k;
-	    } 100 continue    
-	} 200 continue 
-    } 300 continue
+	    } 100 end    
+	} 200 end 
+    } 300 end
 
    
 

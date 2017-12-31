@@ -10,7 +10,7 @@ function void main()
     {
         printi(i);
         B = B + 2 * i;
-    } 100 continue    
+    } 100 end    
     printLine();
     printi(B);
     printLine();
@@ -18,7 +18,7 @@ function void main()
     for 200 (i = 3; 7; 2)
     {
 	x = x * i;
-    } 200 continue    
+    } 200 end    
     printi(x);
     printLine();
 }

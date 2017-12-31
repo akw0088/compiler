@@ -7,7 +7,7 @@ function void main()
     for 10 (i = 0; 999)
     {
         X[i] = (i * 32767) % 10000;
-    } 10  continue
+    } 10  end
 
 	prints("Some of the original values are:\n");
         printi(X[111]);
@@ -61,6 +61,6 @@ function void sort(n)
 		X[j]   = X[j+1];
 		X[j+1] = temp;
 	    }
-	} 100 continue
-    } 200 continue
+	} 100 end
+    } 200 end
 }

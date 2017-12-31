@@ -15,6 +15,6 @@ function void main()
 		printi(j);
 		printLine();
 
-	} 100 continue
-    } 200 continue
+	} 100 end
+    } 200 end
 }

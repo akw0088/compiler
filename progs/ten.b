@@ -13,7 +13,7 @@ function void main()
     for 100 (j = 0; 99)
     {
         A[j] = j;
-    } 100 continue
+    } 100 end
 
     if( A[k-3+i] > j && i != 0)
     {
