@@ -1,0 +1,8 @@
+Some of the original values are:
+7137  4274  1411  2822  9959  4233 
+
+
+
+Some of the sorted values, in order are:
+1074  2189  3304  6610  7727  9959 
+
