@@ -2,7 +2,7 @@ function void main()
 {
     int i;
 
-    for 100 i = 3; 7
+    for 100 (i = 3; 7)
     {
         printi(i);
         prints(" ");

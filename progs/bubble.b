@@ -4,7 +4,7 @@ function void main()
 {
     int i;
 
-    for 10 i = 0; 999
+    for 10 (i = 0; 999)
     {
         X[i] = (i * 32767) % 10000;
     } 10  continue
@@ -50,9 +50,9 @@ function void sort(n)
 {
     int i;
     int j;
-    for 200 i = 0; n-1; 1
+    for 200 (i = 0; n-1; 1)
     {
-        for 100 j = 0; n-i-1; 1
+        for 100 (j = 0; n-i-1; 1)
 	{
 	    if( X[j] > X[j+1] )
             {

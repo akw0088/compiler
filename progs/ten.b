@@ -10,7 +10,7 @@ function void main()
     printi(i);
     printLine();
 
-    for 100 j = 0; 99
+    for 100 (j = 0; 99)
     {
         A[j] = j;
     } 100 continue

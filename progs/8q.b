@@ -8,7 +8,7 @@ function void queens(c)
 {
 	int r;
 
-        for 100 r = 0; 7; 1
+        for 100 (r = 0; 7; 1)
 	{
 	    if (   rows[r] != 0 
 		      && 
@@ -41,7 +41,7 @@ function void print()
 {
 	int k;
 
-	for 200 k = 0; 7
+	for 200 (k = 0; 7)
 	{
 		printc(x[k] + 49);
 	} 200     continue
@@ -51,12 +51,12 @@ function void print()
 function void main()
 {
 	int i;
-	for 300 i = 0; 14
+	for 300 (i = 0; 14)
 	{
 		up[i] = 1;
 		down[i] = 1;
 	} 300	continue
-	for 400 i = 0; 7
+	for 400 (i = 0; 7)
 	{
 		rows[i] = 1;
 	} 400	continue

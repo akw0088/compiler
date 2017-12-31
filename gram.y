@@ -104,7 +104,7 @@ stmt : id '=' e ';'							{ 	codegen.assignment($1, $3);	}
 	codegen.endblock((int)$3);
 }
 
-     | DO INT_LITERAL ID '=' dolist { codegen.midloop($2, $3);} stmts enddo {codegen.endloop($2, $5);}
+     | DO INT_LITERAL '(' ID '=' dolist { codegen.midloop($2, $4);} stmts enddo {codegen.endloop($2, $6);}
 ;
 
 enddo : T_END INT_LITERAL CONTINUE
@@ -121,8 +121,8 @@ conditionalexpr :
 ;
 
 
-dolist :  e ';' e T_BEGIN						{	codegen.startloop($1,"1"); $$ = $3;	}
-     |  e ';' e ';' e T_BEGIN						{	codegen.startloop($1,$5); $$ = $3;	}
+dolist :  e ';' e ')' T_BEGIN						{	codegen.startloop($1,"1"); $$ = $3;	}
+     |  e ';' e ';' e ')' T_BEGIN						{	codegen.startloop($1,$5); $$ = $3;	}
 ;
 
 exprlist : e ',' exprlist					{	codegen.push($1); }
