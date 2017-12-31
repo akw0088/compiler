@@ -32,10 +32,10 @@ funclist : func funclist
 func : RETURNS returntype ID { codegen.startfunc($3); } '(' paramlist ')' {symbol_table.push();} sblock {symbol_table.pop(); codegen.endfunc();}
 ;
 
-parmlist : ID ',' parmlist
+/*parmlist : ID ',' parmlist
      | ID
      | 
-;
+;*/
 
 decllist : decl ';' decllist
      | decl						{	codegen.endallocate();		}
@@ -104,7 +104,7 @@ stmt : id '=' e ';'							{ 	codegen.assignment($1, $3);	}
 	codegen.endblock((int)$3);
 }
 
-     | DO INT_LITERAL '(' ID '=' dolist { codegen.midloop($2, $4);} stmts enddo {codegen.endloop($2, $6);}
+     | DO INT_LITERAL '(' ID '=' dolist { symbol_table.push(); codegen.midloop($2, $4);} stmts enddo {codegen.endloop($2, $6); symbol_table.pop();}
 ;
 
 enddo : T_END INT_LITERAL CONTINUE
