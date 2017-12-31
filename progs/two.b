@@ -4,11 +4,11 @@ main() returns void
     int i;
     int j;
     int k;
-    for 300 i = 0, 9
+    for 300 i = 0; 9
     {
-    	for 200 j = 0, 19
+    	for 200 j = 0; 19
 	{
-    	    for 100 k = 0, 29
+    	    for 100 k = 0; 29
 	    {
 		A[i][j][k] = i * j * k;
 	    } 100 continue

@@ -11,7 +11,7 @@ main() returns void
     printi(i);
     printLine();
 
-    for 100 i = 3, 7, 1
+    for 100 i = 3; 7; 1
     {
         printi(i);
         printLine();
@@ -20,7 +20,7 @@ main() returns void
 
     printi(B);
     printLine();
-    for 200 i = 3, 7, 2
+    for 200 i = 3; 7; 2
     {
 	x = i * 3;
     } 200 continue

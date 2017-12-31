@@ -2,7 +2,7 @@
 main() returns void
 {
     int I;
-    for 100 I = 1, 10
+    for 100 I = 1; 10
     {
     	printi(I);
         prints(" Factorial = ");

@@ -115,8 +115,8 @@ conditionalexpr :
 ;
 
 
-dolist :  e ',' e T_BEGIN						{	codegen.startloop($1,"1"); $$ = $3;	}
-     |  e ',' e ',' e T_BEGIN						{	codegen.startloop($1,$5); $$ = $3;	}
+dolist :  e ';' e T_BEGIN						{	codegen.startloop($1,"1"); $$ = $3;	}
+     |  e ';' e ';' e T_BEGIN						{	codegen.startloop($1,$5); $$ = $3;	}
 ;
 
 exprlist : e ',' exprlist					{	codegen.push($1); }
