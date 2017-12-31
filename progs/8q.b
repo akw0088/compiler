@@ -9,6 +9,7 @@ queens(c) returns void
 	int r;
 
         for 100 r = 0, 7, 1
+	{
 	    if (   rows[r] != 0 
 		      && 
 		   up[r-c+7] != 0
@@ -33,7 +34,7 @@ queens(c) returns void
 		    up[r-c+7] = 1;
 		    down[r+c] = 1;
 		}
-100	continue
+	} 100	continue
 }
 
 print() returns void
@@ -41,8 +42,9 @@ print() returns void
 	int k;
 
 	for 200 k = 0, 7
+	{
 		printc(x[k] + 49);
-200     continue
+	} 200     continue
 	printLine();
 }
 
@@ -50,11 +52,13 @@ main() returns void
 {
 	int i;
 	for 300 i = 0, 14
+	{
 		up[i] = 1;
 		down[i] = 1;
-300	continue
+	} 300	continue
 	for 400 i = 0, 7
+	{
 		rows[i] = 1;
-400	continue
+	} 400	continue
 	queens(0);
 }

@@ -5,7 +5,9 @@ main() returns void
     int i;
 
     for 10 i = 0, 999
+    {
         X[i] = (i * 32767) % 10000;
+    }
 10  continue
 
 	prints("Some of the original values are:\n");
@@ -50,7 +52,9 @@ sort(n) returns void
     int i;
     int j;
     for 200 i = 0, n-1, 1
+    {
         for 100 j = 0, n-i-1, 1
+	{
 	    if( X[j] > X[j+1] )
             {
 		int temp;
@@ -58,6 +62,6 @@ sort(n) returns void
 		X[j]   = X[j+1];
 		X[j+1] = temp;
 	    }
-	100 continue
-    200 continue
+	} 100 continue
+    } 200 continue
 }

@@ -6,10 +6,12 @@ main() returns void
 
     sum = 0;
     for 200 i = 1, 100
+    {
         for 100 j = 1, i, 1
+	{
             sum = sum + 1;
-100     continue
-200 continue
+	} 100     continue
+    } 200 continue
     printi(sum);
     printLine();
 }
